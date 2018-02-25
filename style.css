@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 2.5vh;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: url("img/ship.jpg") no-repeat center center fixed;
+	background-color: black;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+
+ib {
+	display: inline-block;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-bottom: solid lime 0.2vh;
+	display: grid;
+	grid-column-gap: 2vw;
+	grid-template-columns: 10vw auto;
+	height: 10vh;
+}
+
+header > div {
+	align-self: center;
+}
+
+.logo {
+	display: block;
+	height: 8vh;
+	margin-left: auto;
+	margin-right: auto;
+	xwidth: 9vw;
+}
+
+.title {
+	color: lime;
+	font-size: 5vh;
+}
+
+.subtitle {
+	padding-left: 5vw;
+}
+
+#main {
+	display: grid;
+	grid-gap: 2vw;
+	grid-template-columns: 1fr 1fr;
+	padding: 2vw;
+}
+
+#main > div {
+	xalign-self: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: solid white 0.2vh;
+	display: grid;
+	grid-gap: 1vw;
+	grid-template-columns: 1fr 1fr;
+	justify-self: stretch;
+	min-height: 35vh;
+	padding: 1vw;
+}
+
+#main > div > div {
+	justify-self: stretch;
+}
+
+#main a {
+	color: #02CBFF;
+	cursor: pointer;
+	display: block;
+	padding-bottom: 1vh;
+}
+
+#main a:hover {
+	color: lime;
+}
+
+.blurb {
+	font-size: 80%;
+}
