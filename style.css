@@ -25,7 +25,7 @@ header {
 	border-bottom: solid lime 0.2vh;
 	display: grid;
 	grid-column-gap: 2vw;
-	grid-template-columns: 10vw auto;
+	grid-template-columns: 10vh auto;
 	height: 10vh;
 }
 
