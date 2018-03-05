@@ -16,10 +16,6 @@ body {
 	color: white;
 }
 
-ib {
-	display: inline-block;
-}
-
 header {
 	background-color: rgba(0, 0, 0, 0.8);
 	border-bottom: solid lime 0.2vh;
@@ -73,17 +69,28 @@ header > div {
 	justify-self: stretch;
 }
 
-#main a {
+a {
 	color: #02CBFF;
 	cursor: pointer;
+}
+
+a:hover {
+	color: lime;
+}
+
+#main a {
 	display: block;
 	padding-bottom: 1vh;
 }
 
-#main a:hover {
-	color: lime;
-}
-
 .blurb {
 	font-size: 80%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+	border-top: solid white 0.2vh;
+    display: block;
+	padding: 0.5vh;
+    text-align: center;
 }

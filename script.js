@@ -1,5 +1,32 @@
 function init () {
 	var data = [
+        {
+			name: "Talent Core",
+			link: "https://github.com/FrogboyMV/TalentCore",
+			blurb: `
+				Have you ever wanted to make system of non-combat abilities like picking locks,
+                jumping, climbing, spotting hidden enemies and such, and then realize that it's
+                a real pain in the neck to set up because RPG Maker MV makes you implement each
+                one of these painstakingly by hand?  Well, now you don't have to.  My Talent Core
+                plugin does most of the work for you and even gives you a nice inteface to work
+                with.  This was designed to replicate the d20 Skill system but can be used for
+                a lot more than that.
+			`,
+			image: "img/talent.jpg"
+		},
+        {
+			name: "Talent-based Traits",
+			link: "https://github.com/FrogboyMV/TalentBasedTraits",
+			blurb: `
+				This plugin allows you to grant your actors talent-based traits. You will need
+                to also install the FROG_TalentCore plugin to utilize this functionality. What
+                this means is that as your players build up their actor’s Traits, your game can
+                add new abilities and bonuses to said actors based on their talent level. This is
+                useful for creating RPG systems that allow the player to customize their characters
+                however they want as opposed to everything being determined by the character’s class.
+			`,
+			image: "img/taltraits.jpg"
+		},
 		{
 			name: "Race Core",
 			link: "https://github.com/FrogboyMV/RaceCore",
