@@ -123,4 +123,16 @@ function init () {
 
 		main.innerHTML += html;
 	}
-};
+}
+
+function openCredits() {
+    window.download.style.display = "none";
+    window.overlay.style.display = "block";
+    window.credits.style.display = "block";
+}
+
+function openDownload() {
+    window.credits.style.display = "none";
+    window.overlay.style.display = "block";
+    window.download.style.display = "block";
+}
