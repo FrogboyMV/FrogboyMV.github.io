@@ -20,8 +20,8 @@ function init () {
 			blurb: `
 				This plugin allows you to grant your actors talent-based traits. You will need
                 to also install the FROG_TalentCore plugin to utilize this functionality. What
-                this means is that as your players build up their actor’s Traits, your game can
-                add new abilities and bonuses to said actors based on their talent level. This is
+                this means is that as your players build up their actor’s Talents, your game can
+                add new abilities and bonuses to said actors based on their talent level via added Traits. This is
                 useful for creating RPG systems that allow the player to customize their characters
                 however they want as opposed to everything being determined by the character’s class.
 			`,
