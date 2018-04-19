@@ -1,6 +1,18 @@
 function init () {
 	var data = [
         {
+			name: "Frog Core",
+			link: "https://github.com/FrogboyMV/FROG_Core",
+			blurb: `
+                Core library for FROG plugins.  You'll need this for pretty much all future
+                plugins and updates to existing ones.  This doesn't add any functionality
+                for your game.  It's just a library that I need so that I don't have to
+                duplicate code in every plugin.  Place this above all of your FROG plugins
+                and you should be good to go.
+			`,
+			image: "img/core.png"
+		},
+        {
 			name: "Talent Core",
 			link: "https://github.com/FrogboyMV/TalentCore",
 			blurb: `
