@@ -13,6 +13,20 @@ function init () {
 			image: "img/core.png"
 		},
         {
+			name: "Health",
+			link: "https://github.com/FrogboyMV/Health",
+			blurb: `
+				Have you ever thought, "Gee, these HP, MP and TP are nice but it would be really
+                cool if I could add my own custom HP too"?  Well, your in luck!  After two months
+                of effort (somebody shoot me now), I've finally, mostly completed my latest plugin:
+                FROG Health.  Add your own custom HP stats like Food, Water, Rest, Oxygen, Psyche,
+                Body Temperature or whatever else you can dream of.  Configure Skills and Items to
+                harm or heal multiple Health HP.  You won't believe how much customization is
+                offered in this plugin.
+			`,
+			image: "img/health.jpg"
+		},
+        {
 			name: "Talent Core",
 			link: "https://github.com/FrogboyMV/TalentCore",
 			blurb: `
@@ -32,8 +46,8 @@ function init () {
 			blurb: `
 				This plugin allows you to grant your actors talent-based traits. You will need
                 to also install the FROG_TalentCore plugin to utilize this functionality. What
-                this means is that as your players build up their actor’s Talents, your game can
-                add new abilities and bonuses to said actors based on their talent level via added Traits. This is
+                this means is that as your players build up their actor’s Traits, your game can
+                add new abilities and bonuses to said actors based on their talent level. This is
                 useful for creating RPG systems that allow the player to customize their characters
                 however they want as opposed to everything being determined by the character’s class.
 			`,
