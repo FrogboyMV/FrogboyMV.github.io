@@ -134,17 +134,17 @@ function init () {
 	for (var i in data) {
 		var d = data[i];
 		var html = `
-			<div>
-				<div style="background: url('${d.image}') no-repeat; background-size: cover;">
+			<div class="plugin">
+				<div class="plugin__image" style="background: url('${d.image}') no-repeat; background-size: cover;">
 
 				</div>
-				<div>
+				<div class="plugin__content">
 					<a href="${d.link}">${d.name}</a>
-					<div class="blurb">
+					<div class="plugin__blurb">
 						${d.blurb}
 					</div>
 				</div>
-			</div>
+			</plugin>
 		`;
 
 		main.innerHTML += html;

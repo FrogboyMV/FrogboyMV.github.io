@@ -1,7 +1,5 @@
-* {
+*, *::before, *::after {
 	box-sizing: border-box;
-	font-family: Arial;
-	font-size: 2.5vh;
 	margin: 0px;
 	padding: 0px;
 }
@@ -14,15 +12,37 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	color: white;
+    font-family: Arial;
+	font-size: 2.5vh;
+    overflow-x: hidden;
 }
 
 header {
 	background-color: rgba(0, 0, 0, 0.8);
-	border-bottom: solid lime 0.2vh;
 	display: grid;
 	grid-column-gap: 2vw;
 	grid-template-columns: 10vh auto;
 	height: 10vh;
+    position: relative;
+}
+
+header::after {
+    animation-name: scaleX-0-1;
+    animation-delay: 100ms;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    background-color: lime;
+    bottom: 0;
+    box-sizing: border-box;
+    content: '';
+    display: inline-block;
+    height: 0.2vh;
+    position: absolute;
+    overflow: hidden;
+    xtransform-origin: left;
+    width: 100%;
 }
 
 header > div {
@@ -30,6 +50,12 @@ header > div {
 }
 
 .logo {
+    animation-name: scale-0-1;
+    animation-delay: 100ms;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	display: block;
 	height: 8vh;
 	margin-left: auto;
@@ -37,12 +63,30 @@ header > div {
 }
 
 .title {
+    animation-name: drop-down;
+    animation-delay: 100ms;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	color: lime;
 	font-size: 5vh;
+    left: 8rem;
+    position: absolute;
+    top: 1.2rem;
 }
 
 .subtitle {
-	padding-left: 5vw;
+    animation-name: slide-from-right;
+    animation-delay: 500ms;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	xmargin-left: 25rem;
+    position: absolute;
+    right: 5rem;
+    top: 3rem;
 }
 
 #main {
@@ -52,7 +96,7 @@ header > div {
 	padding: 2vw;
 }
 
-#main > div {
+.plugin {
 	xalign-self: center;
 	background-color: rgba(0, 0, 0, 0.8);
 	border: solid white 0.2vh;
@@ -64,26 +108,42 @@ header > div {
 	padding: 1vw;
 }
 
-#main > div > div {
+.plugin__image {
 	justify-self: stretch;
 }
 
-a {
-	color: #02CBFF;
-	cursor: pointer;
+.plugin__content {
+    xdisplay: block;
+	xjustify-self: stretch;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-a:hover {
-	color: lime;
-}
-
-#main a {
-	display: block;
-	padding-bottom: 1vh;
-}
-
-.blurb {
+.plugin__blurb {
+    line-height: 1.8rem;
 	font-size: 80%;
+}
+
+.plugin a {
+    background-color: rgba(10, 210, 255, 0.5);
+	color: black;
+	cursor: pointer;
+    display: block;
+    font-weight: 800;
+    line-height: 3.5vh;
+    margin-bottom: 1.5vh;
+    outline: 2px solid rgba(10, 210, 255, 0.5);
+    text-align: center;
+    text-decoration: none;
+    transition: 200ms;
+    width: 100%;
+}
+
+.plugin a:hover {
+    background-color: rgba(10, 210, 255, 1);
+    outline: 2px solid rgba(10, 210, 255, 1);
+    outline-offset: 3px;
+    transition: 200ms;
 }
 
 footer {
@@ -92,6 +152,17 @@ footer {
     display: block;
 	padding: 0.5vh;
     text-align: center;
+}
+
+footer a {
+	color: #02CBFF;
+	cursor: pointer;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+footer a:hover {
+	color: lime;
 }
 
 #overlay {
@@ -135,4 +206,44 @@ footer {
 
 .pop li {
     padding: 0.5vh;
+}
+
+/* ---------------------------------------
+        Keyframe Animations
+--------------------------------------- */
+
+@keyframes scale-0-1 {
+    from {
+        transform: scale(0);
+    },
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleX-0-1 {
+    from {
+        transform: scaleX(0);
+    },
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes drop-down {
+    from {
+        top: -4rem;
+    },
+    to {
+        top: 1.2rem;
+    }
+}
+
+@keyframes slide-from-right {
+    from {
+        right: -20rem;
+    },
+    to {
+        right: 5rem;
+    }
 }
