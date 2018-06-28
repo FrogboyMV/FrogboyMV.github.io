@@ -130,7 +130,7 @@ header > div {
     display: block;
     font-weight: 800;
     line-height: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
     margin-top: 2px;
     outline: 2px solid rgba(10, 210, 255, 0.5);
     text-align: center;
