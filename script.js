@@ -149,6 +149,9 @@ function init () {
 
 		main.innerHTML += html;
 	}
+
+    // Load background image
+    document.querySelector("body").style.background = "black url('./img/ship.jpg') no-repeat center center fixed";
 }
 
 function openCredits() {
