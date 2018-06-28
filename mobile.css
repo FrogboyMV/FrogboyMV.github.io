@@ -1,5 +1,18 @@
+body {
+    font-size: 1em;
+}
+
 #main {
 	grid-template-columns: 1fr;
+}
+
+.plugin {
+    display: block;
+    min-height: 0;
+}
+
+.plugin__image {
+    display: none;
 }
 
 .pop {

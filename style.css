@@ -38,7 +38,7 @@ header::after {
     box-sizing: border-box;
     content: '';
     display: inline-block;
-    height: 0.2vh;
+    height: 3px;
     position: absolute;
     overflow: hidden;
     xtransform-origin: left;
@@ -73,7 +73,7 @@ header > div {
 	font-size: 2em;
     left: 3em;
     position: absolute;
-    top: 0.5em;
+    top: 0.4em;
 }
 
 .subtitle {
@@ -98,13 +98,13 @@ header > div {
 .plugin {
 	xalign-self: center;
 	background-color: rgba(0, 0, 0, 0.8);
-	border: solid white 0.2vh;
+	border: solid white 2px;
 	display: grid;
 	grid-gap: 1vw;
 	grid-template-columns: 1fr 1fr;
 	justify-self: stretch;
 	min-height: 35vh;
-	padding: 1vw;
+	padding: 0.5em;
 }
 
 .plugin__image {
@@ -129,8 +129,8 @@ header > div {
 	cursor: pointer;
     display: block;
     font-weight: 800;
-    line-height: 3.5vh;
-    margin-bottom: 1.5vh;
+    line-height: 1.5em;
+    margin-bottom: 1em;
     margin-top: 2px;
     outline: 2px solid rgba(10, 210, 255, 0.5);
     text-align: center;
@@ -236,7 +236,7 @@ a:hover {
         top: -1.5em;
     },
     to {
-        top: 0.5em;
+        top: 0.4em;
     }
 }
 
