@@ -57,7 +57,7 @@ header > div {
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	display: block;
-	height: 8vh;
+	height: 3.5em;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -71,9 +71,9 @@ header > div {
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	color: lime;
 	font-size: 2em;
-    left: 8rem;
+    left: 3em;
     position: absolute;
-    top: 1.2rem;
+    top: 0.5em;
 }
 
 .subtitle {
@@ -83,10 +83,9 @@ header > div {
     animation-fill-mode: backwards;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	xmargin-left: 25rem;
     position: absolute;
-    right: 5rem;
-    top: 3rem;
+    right: 2em;
+    top: 1.5em;
 }
 
 #main {
@@ -234,18 +233,18 @@ a:hover {
 
 @keyframes drop-down {
     from {
-        top: -4rem;
+        top: -1.5em;
     },
     to {
-        top: 1.2rem;
+        top: 0.5em;
     }
 }
 
 @keyframes slide-from-right {
     from {
-        right: -20rem;
+        right: -15em;
     },
     to {
-        right: 5rem;
+        right: 2em;
     }
 }
