@@ -132,6 +132,7 @@ header > div {
     font-weight: 800;
     line-height: 3.5vh;
     margin-bottom: 1.5vh;
+    margin-top: 2px;
     outline: 2px solid rgba(10, 210, 255, 0.5);
     text-align: center;
     text-decoration: none;
