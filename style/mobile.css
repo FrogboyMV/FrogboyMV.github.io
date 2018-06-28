@@ -1,0 +1,34 @@
+body {
+    font-size: 1em;
+}
+
+#main {
+	grid-template-columns: 1fr;
+}
+
+.title {
+    left: 2.2em;
+}
+
+.subtitle {
+    font-size: 0.75em;
+    right: 0.5em;
+    top: 2em;
+}
+
+.plugin {
+    display: block;
+    min-height: 0;
+}
+
+.plugin__image {
+    display: none;
+}
+
+footer {
+    font-size: 0.85em;
+}
+
+.pop {
+    width: 90vw;
+}

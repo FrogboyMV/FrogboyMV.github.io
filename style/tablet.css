@@ -1,0 +1,7 @@
+#main {
+	grid-template-columns: 1fr;
+}
+
+.pop {
+    width: 90vw;
+}
