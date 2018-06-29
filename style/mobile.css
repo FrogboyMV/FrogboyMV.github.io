@@ -17,6 +17,7 @@ body {
 }
 
 .plugin {
+    border: 2px solid rgba(0, 200, 255, 0.5);
     display: block;
     min-height: 0;
 }
