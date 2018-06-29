@@ -17,7 +17,9 @@ body {
 }
 
 .plugin {
-    border: 2px solid rgba(0, 200, 255, 0.5);
+    xborder: 2px solid rgba(0, 200, 255, 0.5);
+    border-image: linear-gradient(to bottom left, rgba(0, 200, 255, 0.5) 0%, rgba(0, 255, 0, 0.5) 100%);
+    border-image-slice: 2;
     display: block;
     min-height: 0;
 }

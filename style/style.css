@@ -98,8 +98,11 @@ header > div {
 	xalign-self: center;
 	background-color: rgba(0, 0, 0, 0.8);
 	xborder: solid white 2px;
-    border: 2px solid rgba(0, 255, 0, 1);
-	display: grid;
+    xborder: 2px solid rgba(0, 255, 0, 1);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom left, rgba(0, 200, 255, 0.8) 0%, rgba(0, 255, 0, 0.8) 100%);
+    border-image-slice: 1;
+    display: grid;
 	grid-gap: 1vw;
 	grid-template-columns: 1fr 1fr;
 	justify-self: stretch;
