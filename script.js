@@ -151,7 +151,7 @@ function init () {
 	}
 
     // Load background image
-    document.querySelector("body").style.background = "black url('./img/ship.jpg') no-repeat center center fixed";
+    document.querySelector("body").style.background = "black url('./img/planet.jpg') no-repeat center center fixed";
 }
 
 function openCredits() {
