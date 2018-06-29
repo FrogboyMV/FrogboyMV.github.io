@@ -97,7 +97,8 @@ header > div {
 .plugin {
 	xalign-self: center;
 	background-color: rgba(0, 0, 0, 0.8);
-	border: solid white 2px;
+	xborder: solid white 2px;
+    border: 2px solid rgba(0, 255, 0, 1);
 	display: grid;
 	grid-gap: 1vw;
 	grid-template-columns: 1fr 1fr;
@@ -123,7 +124,7 @@ header > div {
 }
 
 .plugin a {
-    background-color: rgba(10, 210, 255, 0.5);
+    background-color: rgba(10, 210, 255, 0.9);
 	color: black;
 	cursor: pointer;
     display: block;
@@ -131,7 +132,7 @@ header > div {
     line-height: 1.5em;
     margin-bottom: 0.7em;
     margin-top: 2px;
-    outline: 2px solid rgba(10, 210, 255, 0.5);
+    outline: 2px solid rgba(10, 210, 255, 0.8);
     text-align: center;
     text-decoration: none;
     transition: 200ms;
