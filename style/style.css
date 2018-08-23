@@ -18,7 +18,7 @@ header {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: grid;
 	grid-column-gap: 2vw;
-	grid-template-columns: 4em auto;
+	grid-template-columns: 4em 10em auto;
 	height: 4em;
     position: relative;
 }
@@ -44,6 +44,7 @@ header::after {
 
 header > div {
 	align-self: center;
+    width: 100%;
 }
 
 .logo {
@@ -53,7 +54,6 @@ header > div {
     animation-fill-mode: backwards;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	display: block;
 	height: 3.5em;
 	margin-left: auto;
 	margin-right: auto;
@@ -68,9 +68,7 @@ header > div {
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	color: lime;
 	font-size: 2em;
-    left: 3em;
-    position: absolute;
-    top: 0.4em;
+    position: relative;
 }
 
 .subtitle {
@@ -80,9 +78,9 @@ header > div {
     animation-fill-mode: backwards;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: absolute;
-    right: 2em;
-    top: 1.5em;
+    padding-right: 1em;
+    position: relative;
+    text-align: right;
 }
 
 #main {
@@ -234,18 +232,18 @@ a:hover {
 
 @keyframes drop-down {
     from {
-        top: -1.5em;
+        transform: translate(0, -2em);
     },
     to {
-        top: 0.4em;
+        transform: translate(0, 0.4em);
     }
 }
 
 @keyframes slide-from-right {
     from {
-        right: -15em;
+        transform: translate(15em, 0);
     },
     to {
-        right: 2em;
+        transform: translate(2em, 0);
     }
 }

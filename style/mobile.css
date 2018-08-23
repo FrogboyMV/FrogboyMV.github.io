@@ -6,14 +6,8 @@ body {
 	grid-template-columns: 1fr;
 }
 
-.title {
-    left: 2.2em;
-}
-
 .subtitle {
     font-size: 0.75em;
-    right: 0.5em;
-    top: 2em;
 }
 
 .plugin {
