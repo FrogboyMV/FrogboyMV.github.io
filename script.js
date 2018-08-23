@@ -13,6 +13,19 @@ function init () {
 			image: "img/core.png"
 		},
         {
+			name: "Magic",
+			link: "https://github.com/FrogboyMV/Magic",
+			blurb: `
+				This plugin expands on the core skill mechanics to allow you to create your own
+                skill/magic systems.  Actors can use Vancian spell slots, magic points or powers.
+                Adds prepared, spontaneous and hybrid spell casters.  Blue Mages have been
+                integrated in here too as well as learning skills from equipped items ala Espers
+                in Final Fantasy 6.  Create spell lists with leveled spells.  Mix and match options
+                to create totally unique skill mechanics for each of your playable characters.
+			`,
+			image: "img/magic.png"
+		},
+        {
 			name: "Health",
 			link: "https://github.com/FrogboyMV/Health",
 			blurb: `
@@ -102,7 +115,7 @@ function init () {
 			`,
 			image: "img/airship.jpg"
 		},
-		{
+		/*{
 			name: "Blue Magic",
 			link: "https://github.com/FrogboyMV/BlueMagic",
 			blurb: `
@@ -114,7 +127,7 @@ function init () {
 				heals and buffs.
 			`,
 			image: "img/blue_magic.jpg"
-		},
+		},*/
 		{
 			name: "Miscellaneous Plugins",
 			link: "https://github.com/FrogboyMV/MiscPlugins",
@@ -135,7 +148,7 @@ function init () {
 		var d = data[i];
 		var html = `
 			<div class="plugin">
-				<div class="plugin__image" style="background: url('${d.image}') no-repeat; background-size: cover;">
+				<div class="plugin__image" style="background: url('${d.image}') no-repeat; background-size: cover; background-position: center;">
 
 				</div>
 				<div class="plugin__content">
